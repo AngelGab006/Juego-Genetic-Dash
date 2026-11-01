@@ -1,0 +1,25 @@
+# Ignore .yy files for language statistics
+*.yy linguist-generated=true
+ 
+# force LF for metadata files for merge simplicity
+*.gml text eol=lf
+*.yy text eol=lf
+*.yyp text eol=lf
+*.json text eol=lf
+
+
+* text=auto
+
+*.yy   text eol=lf
+*.yyp  text eol=lf
+*.gml  text eol=lf
+*.json text eol=lf
+*.md   text eol=lf
+
+*.png  binary
+*.jpg  binary
+*.ogg  binary
+*.wav  binary
+*.mp3  binary
+*.ttf  binary
+*.otf  binary
