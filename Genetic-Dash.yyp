@@ -70,7 +70,6 @@
     {"id":{"name":"scr_ai_dummy","path":"scripts/scr_ai_dummy/scr_ai_dummy.yy",},},
     {"id":{"name":"scr_config","path":"scripts/scr_config/scr_config.yy",},},
     {"id":{"name":"scr_env","path":"scripts/scr_env/scr_env.yy",},},
-    {"id":{"name":"scr_flow","path":"scripts/scr_flow/scr_flow.yy",},},
     {"id":{"name":"scr_game_flow","path":"scripts/scr_game_flow/scr_game_flow.yy",},},
     {"id":{"name":"scr_input","path":"scripts/scr_input/scr_input.yy",},},
     {"id":{"name":"scr_level_loader","path":"scripts/scr_level_loader/scr_level_loader.yy",},},

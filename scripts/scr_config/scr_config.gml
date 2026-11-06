@@ -15,7 +15,7 @@
 #macro CUBE_GRAVITY     0.90
 #macro CUBE_JUMP_VY    -11.0
 #macro CUBE_MAX_FALL    15.0
-#macro CUBE_HITBOX      28
+#macro CUBE_HITBOX      32
 
 // Trampolín (pad)
 #macro PAD_VY          -15.0
@@ -33,8 +33,8 @@
 #macro SHIP_HITBOX_H    20
 
 // Obstáculos
-#macro SPIKE_HITBOX_W   10
-#macro SPIKE_HITBOX_H   18
+#macro SPIKE_HITBOX_W   6
+#macro SPIKE_HITBOX_H   12
 #macro BLOCK_TOP_KILLS  false
 #macro BLOCK_TOLERANCE  6
 

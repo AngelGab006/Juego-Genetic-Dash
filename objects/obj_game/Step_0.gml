@@ -1,9 +1,9 @@
-// arranca en el menu
+// Arranque empezamos en el menu
 if (room == rm_boot) {
     game_go_menu();
-	// TEMPORAL: probar el modo IA con la tecla A
-	if (keyboard_check_pressed(ord("A"))) {
-	    global.controller = (global.controller == CONTROLLER.HUMAN)
-	                      ? CONTROLLER.AI : CONTROLLER.HUMAN;
-	}
+}
+
+// TEMPORAL para probar el juego
+if (room == rm_menu && keyboard_check_pressed(vk_enter)) {
+    game_start_level(1);
 }
