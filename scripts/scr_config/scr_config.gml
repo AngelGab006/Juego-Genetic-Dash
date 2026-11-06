@@ -1,8 +1,4 @@
-// ============================================================
-// scr_config: Constantes globales de Genetic Dash
-// Regla: ningún número "mágico" fuera de este archivo.
-// Unidades: píxeles y frames (room_speed = 60). no delta_time.
-// ============================================================
+// configuracion del juego
 
 // Información
 #macro GAME_NAME        "Genetic Dash"
@@ -51,6 +47,7 @@
 // 17 tiles = 15 de nivel + 2 de suelo
 #macro VIEW_H           544
 #macro CAM_PLAYER_X     240
+#macro GROUND_Y (LEVEL_ROWS * TILE)
 
 // Niveles
 #macro LEVEL_DIR        "levels/"
