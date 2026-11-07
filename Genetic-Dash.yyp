@@ -73,6 +73,7 @@
     {"id":{"name":"scr_game_flow","path":"scripts/scr_game_flow/scr_game_flow.yy",},},
     {"id":{"name":"scr_input","path":"scripts/scr_input/scr_input.yy",},},
     {"id":{"name":"scr_level_loader","path":"scripts/scr_level_loader/scr_level_loader.yy",},},
+    {"id":{"name":"scr_player_core","path":"scripts/scr_player_core/scr_player_core.yy",},},
     {"id":{"name":"scr_player_cube","path":"scripts/scr_player_cube/scr_player_cube.yy",},},
     {"id":{"name":"scr_player_ship","path":"scripts/scr_player_ship/scr_player_ship.yy",},},
     {"id":{"name":"snd_death","path":"sounds/snd_death/snd_death.yy",},},

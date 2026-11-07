@@ -48,6 +48,7 @@
 #macro VIEW_H           544
 #macro CAM_PLAYER_X     240
 #macro GROUND_Y (LEVEL_ROWS * TILE)
+#macro DEATH_DELAY_FR   30
 
 // Niveles
 #macro LEVEL_DIR        "levels/"

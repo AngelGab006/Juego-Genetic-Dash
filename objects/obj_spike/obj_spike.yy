@@ -9,7 +9,10 @@
     "name":"Obstacles",
     "path":"folders/Objects/Obstacles.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"par_hazard",
+    "path":"objects/par_hazard/par_hazard.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -27,7 +30,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_spike",
+    "path":"sprites/spr_spike/spr_spike.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
