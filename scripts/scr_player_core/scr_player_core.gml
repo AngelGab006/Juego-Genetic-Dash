@@ -3,7 +3,8 @@ function player_die() {
     // Si ya está muerto, no hacer nada
     if (global.game_state != GAME_STATE.PLAYING) exit;
 
-    global.game_state = GAME_STATE.DEAD;
+    global.death_pct  = level_progress_pct();
+	global.game_state = GAME_STATE.DEAD;
     dead_timer = DEATH_DELAY_FR;
     visible = false;
     // (Agregar sonido de muerte)

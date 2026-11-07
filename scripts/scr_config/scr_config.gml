@@ -78,6 +78,7 @@ function config_init() {
     global.fast_mode     = false;
     global.music_volume  = 0.7;
     global.sfx_volume    = 1.0;
+	global.death_pct = 0;
 	global.level = { name: "", music: "1", speed: 1.0,
                      cols: 0, rows: 0, end_x: 0, width: VIEW_W };
 }

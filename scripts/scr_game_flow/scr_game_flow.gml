@@ -13,3 +13,9 @@ function game_go_menu() {
     global.game_state = GAME_STATE.MENU;
     room_goto(rm_menu);
 }
+
+// Porcentaje de avance del jugador en el nivel
+function level_progress_pct() {
+    if (!instance_exists(obj_player)) return 0;
+    return clamp(floor(100 * obj_player.x / max(1, global.level.end_x)), 0, 100);
+}
