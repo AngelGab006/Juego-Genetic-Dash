@@ -54,6 +54,7 @@
 #macro LEVEL_DIR        "levels/"
 #macro LEVEL_EXT        ".txt"
 #macro LEVEL_COUNT      3
+#macro LEVEL_END_PAD    10
 
 // IA / Entorno
 #macro AI_LOOKAHEAD     6
@@ -77,4 +78,6 @@ function config_init() {
     global.fast_mode     = false;
     global.music_volume  = 0.7;
     global.sfx_volume    = 1.0;
+	global.level = { name: "", music: "1", speed: 1.0,
+                     cols: 0, rows: 0, end_x: 0, width: VIEW_W };
 }
