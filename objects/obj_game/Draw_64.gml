@@ -13,8 +13,7 @@ if (room == rm_game && instance_exists(obj_player)) {
                    + "  suelo: " + string(obj_player.on_ground));
     draw_text(8, 64, "Intento: " + string(global.attempts)
                    + "   Estado: " + string(global.game_state));
-	draw_text(8, 112, "Progreso: " + string(level_progress_pct()) + "%"
-                + "   (N = +20 tiles, B = -20 tiles)");
+	draw_text(8, 112, "Progreso: " + string(level_progress_pct()) + "%");
 }
 
 draw_text(8, 88, "Bloques: " + string(instance_number(obj_block))

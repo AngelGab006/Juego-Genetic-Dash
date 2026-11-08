@@ -19,7 +19,12 @@ switch (mode) {
         break;
 }
 
-// Púas
+// Interacción
+if (global.game_state == GAME_STATE.PLAYING) {
+    player_interact();
+}
+
+// Peligros
 if (place_meeting(x, y, par_hazard)) {
     player_die();
 }

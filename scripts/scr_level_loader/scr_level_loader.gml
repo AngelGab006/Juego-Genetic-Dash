@@ -4,9 +4,10 @@
 function level_char_to_asset(_ch) {
     switch (_ch) {
         case "^": return obj_spike;
-        case "v": return obj_spike;          // púa invertida
+		// púa invertida
+        case "v": return obj_spike;
         case "#": return obj_block;
-        // T10: case "=": return obj_pad;
+        case "=": return obj_pad;
         // T11: case "o": return obj_orb;
         // T12: case "S": return obj_portal_ship;
         // T12: case "N": return obj_portal_normal;

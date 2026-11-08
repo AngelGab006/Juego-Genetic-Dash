@@ -18,7 +18,7 @@
 #macro CUBE_HITBOX      32
 
 // Trampolín (pad)
-#macro PAD_VY          -15.0
+#macro PAD_VY          -16.4
 
 // Orbe de doble salto (orb)
 #macro ORB_VY          -11.0

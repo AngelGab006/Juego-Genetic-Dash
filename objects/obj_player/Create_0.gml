@@ -4,3 +4,4 @@ on_ground  = false;
 dead_timer = 0;
 start_x    = x;
 start_y    = y;
+last_touch = noone;

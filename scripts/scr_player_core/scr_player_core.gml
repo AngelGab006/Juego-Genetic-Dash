@@ -17,7 +17,28 @@ function player_respawn() {
     on_ground = false;
     mode = PLAYER_MODE.CUBE;
     visible = true;
+	last_touch = noone;
 
     global.attempts++;
     global.game_state = GAME_STATE.PLAYING;
+}
+
+// Interacción con pads, orbes, portales y meta.
+function player_interact() {
+    var _it = instance_place(x, y, par_interactable);
+
+    if (_it == noone) {
+        last_touch = noone;
+        return;
+    }
+
+    if (_it == last_touch) return;
+    last_touch = _it;
+
+    switch (_it.obj_type) {
+        case OBJ_TYPE.PAD:
+            vy = PAD_VY;
+            on_ground = false;
+            break;
+    }
 }
