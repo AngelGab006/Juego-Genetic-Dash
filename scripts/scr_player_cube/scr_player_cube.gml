@@ -19,6 +19,7 @@ function player_cube_step(_inp) {
     if (on_ground && _inp.jump_held) {
         vy = CUBE_JUMP_VY;
         on_ground = false;
+		jump_buffer = 0;
     }
 
     // Gravedad y movimiento vertical

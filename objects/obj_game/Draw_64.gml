@@ -14,6 +14,7 @@ if (room == rm_game && instance_exists(obj_player)) {
     draw_text(8, 64, "Intento: " + string(global.attempts)
                    + "   Estado: " + string(global.game_state));
 	draw_text(8, 112, "Progreso: " + string(level_progress_pct()) + "%");
+	draw_text(8, 136, "buffer: " + string(obj_player.jump_buffer));
 }
 
 draw_text(8, 88, "Bloques: " + string(instance_number(obj_block))

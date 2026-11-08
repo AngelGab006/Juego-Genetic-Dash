@@ -5,3 +5,4 @@ dead_timer = 0;
 start_x    = x;
 start_y    = y;
 last_touch = noone;
+jump_buffer = 0;

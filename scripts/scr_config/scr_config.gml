@@ -22,7 +22,6 @@
 
 // Orbe de doble salto (orb)
 #macro ORB_VY          -11.0
-#macro ORB_RADIUS       20
 #macro INPUT_BUFFER_FR  6
 
 // Modo nave

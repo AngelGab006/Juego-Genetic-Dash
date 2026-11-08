@@ -1,0 +1,1 @@
+obj_type = OBJ_TYPE.ORB;

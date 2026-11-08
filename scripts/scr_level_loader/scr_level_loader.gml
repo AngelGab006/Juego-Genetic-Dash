@@ -8,7 +8,7 @@ function level_char_to_asset(_ch) {
         case "v": return obj_spike;
         case "#": return obj_block;
         case "=": return obj_pad;
-        // T11: case "o": return obj_orb;
+        case "o": return obj_orb;
         // T12: case "S": return obj_portal_ship;
         // T12: case "N": return obj_portal_normal;
         // T13: case "E": return obj_goal;

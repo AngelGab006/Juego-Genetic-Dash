@@ -1,7 +1,9 @@
 {
   "$GMObject":"",
   "%Name":"obj_orb",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"obj_orb",
   "overriddenProperties":[],
@@ -9,7 +11,10 @@
     "name":"Mechanics",
     "path":"folders/Objects/Mechanics.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"par_interactable",
+    "path":"objects/par_interactable/par_interactable.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -21,13 +26,21 @@
   "physicsRestitution":0.1,
   "physicsSensor":false,
   "physicsShape":1,
-  "physicsShapePoints":[],
+  "physicsShapePoints":[
+    {"x":0.0,"y":0.0,},
+    {"x":32.0,"y":0.0,},
+    {"x":32.0,"y":32.0,},
+    {"x":0.0,"y":32.0,},
+  ],
   "physicsStartAwake":true,
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_orb",
+    "path":"sprites/spr_orb/spr_orb.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

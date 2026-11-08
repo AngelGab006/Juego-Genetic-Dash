@@ -18,6 +18,7 @@ function player_respawn() {
     mode = PLAYER_MODE.CUBE;
     visible = true;
 	last_touch = noone;
+	jump_buffer = 0;
 
     global.attempts++;
     global.game_state = GAME_STATE.PLAYING;
@@ -33,12 +34,21 @@ function player_interact() {
     }
 
     if (_it == last_touch) return;
-    last_touch = _it;
 
     switch (_it.obj_type) {
         case OBJ_TYPE.PAD:
             vy = PAD_VY;
             on_ground = false;
+			last_touch = _it;
+            break;
+			
+		case OBJ_TYPE.ORB:
+            if (jump_buffer > 0) {
+                vy = ORB_VY;
+                on_ground = false;
+                jump_buffer = 0;
+                last_touch = _it;
+            }
             break;
     }
 }

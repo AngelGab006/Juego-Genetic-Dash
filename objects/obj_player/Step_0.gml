@@ -8,6 +8,11 @@ if (global.game_state == GAME_STATE.DEAD) {
 if (global.game_state != GAME_STATE.PLAYING) exit;
 
 var _inp = input_get();
+if (_inp.jump_pressed) {
+    jump_buffer = INPUT_BUFFER_FR;
+} else {
+    jump_buffer = max(0, jump_buffer - 1);
+}
 
 // Avance horizontal
 x += SPEED_NORMAL;
