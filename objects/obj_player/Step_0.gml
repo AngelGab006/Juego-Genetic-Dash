@@ -19,8 +19,11 @@ x += SPEED_NORMAL;
 
 // física según el modo
 switch (mode) {
-    case PLAYER_MODE.CUBE:
+	case PLAYER_MODE.CUBE:
         player_cube_step(_inp);
+        break;
+	case PLAYER_MODE.SHIP:
+        player_ship_step(_inp);
         break;
 }
 

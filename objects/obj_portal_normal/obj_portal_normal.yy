@@ -1,7 +1,9 @@
 {
   "$GMObject":"",
   "%Name":"obj_portal_normal",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"obj_portal_normal",
   "overriddenProperties":[],
@@ -9,7 +11,10 @@
     "name":"Mechanics",
     "path":"folders/Objects/Mechanics.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"par_interactable",
+    "path":"objects/par_interactable/par_interactable.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -27,7 +32,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_portal_normal",
+    "path":"sprites/spr_portal_normal/spr_portal_normal.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

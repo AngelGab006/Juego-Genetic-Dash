@@ -15,7 +15,7 @@ function player_respawn() {
     y = start_y;
     vy = 0;
     on_ground = false;
-    mode = PLAYER_MODE.CUBE;
+    player_set_mode(PLAYER_MODE.CUBE);
     visible = true;
 	last_touch = noone;
 	jump_buffer = 0;
@@ -49,6 +49,35 @@ function player_interact() {
                 jump_buffer = 0;
                 last_touch = _it;
             }
+            break;
+		
+		case OBJ_TYPE.PORTAL_SHIP:
+            player_set_mode(PLAYER_MODE.SHIP);
+            last_touch = _it;
+            break;
+
+        case OBJ_TYPE.PORTAL_NORMAL:
+            player_set_mode(PLAYER_MODE.CUBE);
+            last_touch = _it;
+            break;
+    }
+}
+
+// Cambia el modo del jugador
+function player_set_mode(_m) {
+    if (mode == _m) return;
+
+    mode = _m;
+    image_angle = 0;
+    on_ground = false;
+
+    switch (_m) {
+        case PLAYER_MODE.CUBE:
+            sprite_index = spr_player_cube;
+            break;
+        case PLAYER_MODE.SHIP:
+            sprite_index = spr_player_ship;
+            vy = clamp(vy, -SHIP_MAX_VY, SHIP_MAX_VY);
             break;
     }
 }
