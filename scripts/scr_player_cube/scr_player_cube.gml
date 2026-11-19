@@ -55,4 +55,10 @@ function player_cube_step(_inp) {
             return;
         }
     }
+	    if (on_ground) {
+        var _target = round(visual_angle / 90) * 90;
+        visual_angle += angle_difference(_target, visual_angle) * 0.4;
+    } else {
+        visual_angle -= CUBE_ROT_SPEED;
+    }
 }

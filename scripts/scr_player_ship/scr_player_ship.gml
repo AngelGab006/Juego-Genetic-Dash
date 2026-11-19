@@ -31,10 +31,6 @@ function player_ship_step(_inp) {
         y = GROUND_Y - _half;
         vy = 0;
     }
-    if (y - _half <= CEILING_Y) {
-        y = CEILING_Y + _half;
-        vy = 0;
-    }
 
     // apoyo encima o golpe por debajo
     _blk = instance_place(x, y, par_solid);
@@ -48,5 +44,5 @@ function player_ship_step(_inp) {
     }
 
     // Inclinación visual según la velocidad
-    image_angle = clamp(-vy * 5, -35, 35);
+    visual_angle = clamp(-vy * 5, -35, 35);
 }

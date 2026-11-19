@@ -1,0 +1,1 @@
+image_blend = position_meeting(mouse_x, mouse_y, id) ? c_white : make_colour_rgb(150, 140, 190);

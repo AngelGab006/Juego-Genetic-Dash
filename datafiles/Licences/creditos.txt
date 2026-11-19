@@ -1,0 +1,36 @@
+CREDITOS - Genetic Dash (audio)
+
+MUSICA (todas de NoCopyrightSounds, libres de copyright segun su descripcion)
+
+snd_music_1.ogg
+Track: Elektronomia Nightcore - Summersong 2018 [NCS Release]
+Music provided by NoCopyrightSounds.
+Descarga: http://ncs.io/Summersong
+Video: https://youtu.be/HoCw_gaCHXE
+Politica de uso: http://ncs.io/UsagePolicy
+
+snd_music_2.ogg
+Track: Lost Sky - Dreams [NCS Release]
+Music provided by NoCopyrightSounds.
+Descarga: http://ncs.io/Dreams
+Video: https://youtu.be/SHFTHDncw0g
+Politica de uso: http://ncs.io/UsagePolicy
+
+snd_music_3.ogg
+Track: Robin Hustin - On Fire [NCS Release]
+Music provided by NoCopyrightSounds.
+Descarga: http://ncs.io/OnFireID
+Video: https://youtu.be/S0STHSOPPSM
+Politica de uso: http://ncs.io/UsagePolicy
+
+EFECTOS DE SONIDO (SFX)
+
+snd_death.wav
+Sound: "Arcade game explosion"
+Fuente: Mixkit - https://mixkit.co/free-sound-effects/explosion/
+Licencia: Mixkit Sound Effects Free License
+
+snd_win.wav
+Sound: "Winning chimes"
+Fuente: Mixkit - https://mixkit.co/free-sound-effects/win/
+Licencia: Mixkit Sound Effects Free License

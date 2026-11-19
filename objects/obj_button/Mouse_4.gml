@@ -1,0 +1,1 @@
+game_start_level(level);

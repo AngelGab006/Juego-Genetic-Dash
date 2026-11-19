@@ -1,0 +1,1 @@
+if (room == rm_game) draw_background();

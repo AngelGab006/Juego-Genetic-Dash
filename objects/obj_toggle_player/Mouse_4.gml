@@ -1,0 +1,1 @@
+global.controller = (global.controller == CONTROLLER.HUMAN) ? CONTROLLER.AI : CONTROLLER.HUMAN;

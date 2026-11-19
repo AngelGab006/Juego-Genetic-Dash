@@ -1,0 +1,1 @@
+global.level.end_x = x;

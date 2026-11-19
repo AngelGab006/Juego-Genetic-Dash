@@ -7,9 +7,9 @@ function input_get() {
     }
 
     // Humano
-    var _pressed = keyboard_check_pressed(vk_space) || keyboard_check_pressed(vk_up) || mouse_check_button_pressed(mb_left);
+	var _pressed = keyboard_check_pressed(vk_space) || keyboard_check_pressed(vk_up) || (!pause_button_over() && mouse_check_button_pressed(mb_left));
 
-    var _held = keyboard_check(vk_space) || keyboard_check(vk_up) || mouse_check_button(mb_left);
+	var _held = keyboard_check(vk_space) || keyboard_check(vk_up) || (!pause_button_over() && mouse_check_button(mb_left));
 
     return { jump_pressed: _pressed, jump_held: _held };
 }

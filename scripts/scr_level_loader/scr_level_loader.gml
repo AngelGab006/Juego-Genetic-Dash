@@ -11,7 +11,7 @@ function level_char_to_asset(_ch) {
         case "o": return obj_orb;
         case "S": return obj_portal_ship;
         case "N": return obj_portal_normal;
-        // T13: case "E": return obj_goal;
+		case ",": return obj_small_spike;
     }
     return -1;
 }
@@ -26,7 +26,7 @@ function level_load(_n) {
 
     // Leer el archivo
     var _rows = [];
-    var _meta = { name: "Nivel " + string(_n), music: string(_n), speed: "1.0" };
+	var _meta = { name: "Nivel " + string(_n), music: string(_n), bg: string(_n), speed: "1.0" };
 
     var _f = file_text_open_read(_path);
     while (!file_text_eof(_f)) {
@@ -77,7 +77,9 @@ function level_load(_n) {
         cols:  _cols,
         rows:  LEVEL_ROWS,
         end_x: _cols * TILE,
-        width: (_cols + LEVEL_END_PAD) * TILE
+        width: (_cols + LEVEL_END_PAD) * TILE,
+		music: clamp(real(_meta.music), 1, array_length(global.music_list)),
+		bg_sprite: global.bg_list[clamp(real(_meta.bg), 1, array_length(global.bg_list)) - 1],
     };
 
     // Crear los objetos
@@ -91,8 +93,6 @@ function level_load(_n) {
             var _x = (_c - 1) * TILE;
             var _y = _r * TILE;
 
-            if (_ch == "E") global.level.end_x = _x;
-
             var _asset = level_char_to_asset(_ch);
             if (_asset == -1) {
 				// aún no implementado: se omite
@@ -104,13 +104,18 @@ function level_load(_n) {
                 // Invertida: con origen Top Left se voltea y baja un tile
                 var _inv = instance_create_layer(_x, _y + TILE, "Instances", _asset);
                 _inv.image_yscale = -1;
+			} else if (_ch == ",") {
+				instance_create_layer(_x, _y + TILE / 2, "Instances", _asset);
             } else {
                 instance_create_layer(_x, _y, "Instances", _asset);
             }
             _count++;
         }
     }
-
+	
+	// barra de meta va donde termina el nivel
+    instance_create_layer(global.level.end_x, 0, "Instances", obj_goal);
+	
     // Jugador al inicio
     instance_create_layer(CAM_PLAYER_X, GROUND_Y - CUBE_HITBOX / 2,
                           "Instances", obj_player);
