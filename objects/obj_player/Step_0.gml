@@ -42,7 +42,7 @@ if (global.game_state == GAME_STATE.PLAYING) {
 
 // Final del nivel
 if (global.game_state == GAME_STATE.PLAYING
-    && x >= global.level.end_x - WIN_STOP_DIST) {
+    && x >= level_goal_x() - WIN_STOP_DIST) {
     player_start_win();
 }
 

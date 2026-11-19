@@ -1,5 +1,5 @@
 function camera_follow_player() {
-    var _max_x = max(0, global.level.end_x - VIEW_W + CAM_END_MARGIN);
+    var _max_x = max(0, level_goal_x() - VIEW_W + CAM_END_MARGIN);
     var _cx = clamp(x - CAM_PLAYER_X, 0, _max_x);
 
     var _target = cam_y;

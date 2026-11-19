@@ -121,10 +121,8 @@ function config_init() {
     global.music_volume = 0.7;
     global.sfx_volume = 1.0;
 	global.death_pct = 0;
-	global.bg_list = [spr_bg_1, spr_bg_2, spr_bg_3];
     global.music_list = [snd_music_1, snd_music_2, snd_music_3];
     global.music_handle = -1;
-	global.level = { name: "", music: "1", speed: 1.0,
-                     cols: 0, rows: 0, end_x: 0, width: VIEW_W};
+	global.level_rooms = [rm_level_1, rm_level_2, rm_level_3];
 	global.debug = true;
 }

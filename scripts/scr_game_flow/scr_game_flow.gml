@@ -1,11 +1,20 @@
 // mueve el juego entre el menu y los niveles
 
+
+function room_is_level() {
+    return array_contains(global.level_rooms, room);
+}
+
+function level_goal_x() {
+    return room_width;
+}
+
 // Arranca un nivel
 function game_start_level(_n) {
     global.current_level = _n;
     global.attempts      = 1;
     global.game_state    = GAME_STATE.PLAYING;
-    room_goto(rm_game);
+    room_goto(global.level_rooms[_n - 1]);
 }
 
 // Vuelve al menú principal
@@ -19,7 +28,7 @@ function game_go_menu() {
 function level_progress_pct() {
     if (!instance_exists(obj_player)) return 0;
     var _p = obj_player;
-    var _total = max(1, global.level.end_x - WIN_STOP_DIST - _p.start_x);
+    var _total = max(1, level_goal_x() - WIN_STOP_DIST - _p.start_x);
     return clamp(floor(100 * (_p.x - _p.start_x) / _total), 0, 100);
 }
 

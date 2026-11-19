@@ -27,7 +27,7 @@ function player_respawn() {
     visual_angle = 0;
     image_xscale = 1;
     image_yscale = 1;
-	music_play(global.level.music);
+	music_play(global.current_level);
 }
 
 // Interacción con pads, orbes, portales y meta.
@@ -101,7 +101,7 @@ function player_start_win() {
     win_timer = 0;
     win_x0 = x;
     win_y0 = y;
-    win_tx = global.level.end_x - 4;
+    win_tx = level_goal_x() - 4;
     win_ty = cam_y + VIEW_H * 0.40;
     vy = 0;
 	music_stop(); 

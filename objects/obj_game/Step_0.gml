@@ -12,7 +12,7 @@ if (keyboard_check_pressed(vk_f11)) {
 }
 
 // Pausa (ESC, P o el botón II)
-if (room == rm_game && !global.fast_mode) {
+if (room_is_level() && !global.fast_mode) {
     var _key   = keyboard_check_pressed(vk_escape) || keyboard_check_pressed(ord("P"));
     var _click = mouse_check_button_pressed(mb_left) && pause_button_over();
 

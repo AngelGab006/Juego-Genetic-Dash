@@ -5,7 +5,7 @@ if (global.debug) {
                   + "   Estado: " + string(global.game_state)
                   + "   FPS: " + string(fps));
 
-    if (room == rm_game && instance_exists(obj_player)) {
+    if (room_is_level() && instance_exists(obj_player)) {
         draw_text(8, 40, "x: " + string(obj_player.x)
                        + "  y: " + string(obj_player.y)
                        + "  vy: " + string(obj_player.vy)
@@ -16,7 +16,7 @@ if (global.debug) {
     }
 }
 
-if (room == rm_game && !global.fast_mode) {
+if (room_is_level() && !global.fast_mode) {
     // Botón de pausa (solo mientras se juega)
     if (global.game_state == GAME_STATE.PLAYING || global.game_state == GAME_STATE.DEAD) {
         draw_pause_button();
