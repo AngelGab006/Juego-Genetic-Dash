@@ -97,18 +97,14 @@
 #macro CAM_LERP_FOLLOW	0.20
 #macro CAM_LERP_SETTLE	0.08
 #macro CAM_END_MARGIN	0
-#macro BG_PARALLAX_X	0.25 
 
 // Niveles
-#macro LEVEL_DIR		"levels/"
-#macro LEVEL_EXT		".txt"
-#macro LEVEL_COUNT		3
-#macro LEVEL_END_PAD	10
+#macro LEVEL_COUNT		5
 
 // Enums
 enum GAME_STATE		{ BOOT, MENU, PLAYING, DEAD, WON, WINNING, PAUSED}
 enum PLAYER_MODE	{ CUBE, SHIP }
-enum CONTROLLER		{ HUMAN, AI }
+enum CONTROLLER		{ HUMAN, AI_TRAIN , AI_TEST }
 enum OBJ_TYPE		{ NONE = 0, SPIKE, BLOCK, PAD, ORB, PORTAL_SHIP, PORTAL_NORMAL, GOAL}
 
 // Estado global (inicializamos todas las configuraciones iniciales)
@@ -123,6 +119,6 @@ function config_init() {
 	global.death_pct = 0;
     global.music_list = [snd_music_1, snd_music_2, snd_music_3];
     global.music_handle = -1;
-	global.level_rooms = [rm_level_1, rm_level_2, rm_level_3];
+	global.level_rooms = [rm_level_1, rm_level_2, rm_level_3, rm_level_4, rm_level_5,rm_level_6, rm_level_7];
 	global.debug = true;
 }

@@ -1,6 +1,14 @@
 draw_self();
 
-var _txt = "JUGADOR: " + ((global.controller == CONTROLLER.HUMAN) ? "HUMANO" : "IA");
+var _txt = "JUGADOR";
+
+if (global.controller == CONTROLLER.HUMAN){
+	_txt = "JUGADOR";
+}else if (global.controller == CONTROLLER.AI_TRAIN){
+	_txt = "AI Train";
+}else if (global.controller == CONTROLLER.AI_TEST){
+	_txt = "AI Test";
+}
 
 draw_set_font(fnt_ui);
 draw_set_halign(fa_center);

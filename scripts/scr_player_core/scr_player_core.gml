@@ -66,10 +66,6 @@ function player_interact() {
             player_set_mode(PLAYER_MODE.CUBE);
             last_touch = _it;
             break;
-
-		case OBJ_TYPE.GOAL:
-            player_win();
-            break;
     }
 }
 
@@ -78,7 +74,7 @@ function player_set_mode(_m) {
     if (mode == _m) return;
 
     mode = _m;
-    visual_angle = 0
+    visual_angle = 0;
     on_ground = false;
 
     switch (_m) {

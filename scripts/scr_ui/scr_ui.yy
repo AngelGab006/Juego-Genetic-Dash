@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"src_ui",
+  "%Name":"scr_ui",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"src_ui",
+  "name":"scr_ui",
   "parent":{
     "name":"Core",
     "path":"folders/Scripts/Core.yy",

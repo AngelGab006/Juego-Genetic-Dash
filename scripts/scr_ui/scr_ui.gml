@@ -136,21 +136,3 @@ function draw_panel(_kind, _sel) {
     }
     draw_set_font(-1);
 }
-
-function draw_attempt_text() {
-    if (!instance_exists(obj_player)) return;
-
-    draw_set_font(fnt_ui);
-    draw_set_halign(fa_center);
-    draw_set_valign(fa_middle);
-    draw_set_alpha(0.9);
-    draw_set_color(COL_WHITE);
-    draw_text_transformed(obj_player.start_x + 220, GROUND_Y - 180,
-                          "INTENTO " + string(global.attempts), 3, 3, 0);
-
-    draw_set_alpha(1);
-    draw_set_font(-1);
-    draw_set_halign(fa_left);
-    draw_set_valign(fa_top);
-    draw_set_color(c_white);
-}
