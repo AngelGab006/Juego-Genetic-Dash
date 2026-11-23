@@ -99,7 +99,7 @@
 #macro CAM_END_MARGIN	0
 
 // Niveles
-#macro LEVEL_COUNT		5
+#macro LEVEL_COUNT		7
 
 // Enums
 enum GAME_STATE		{ BOOT, MENU, PLAYING, DEAD, WON, WINNING, PAUSED}
